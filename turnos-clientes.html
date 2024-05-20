@@ -39,11 +39,134 @@
             </nav>
         </header>
         
-        <main>
+        <main id="turnos" class="turnosClientes">
             <!-- colocar el contenido que sea necesario, los sections son a modo de ejemplo -->
-            <section></section>
-            <section></section>
-            <section></section>
+            <!-- Horarios y Solicitud de turno -->
+            <div class="turnosClientes__titulos">
+                <small>SECCIÓN DE TURNOS</small>
+                <h3>CONCRETA TU CITA</h3>
+                <hr>
+                <p>Escoge el momento que más te convenga y contactanos</p>
+            </div>
+            <div class="turnosClientes__horaTurn">
+                <!-- Horarios -->
+                <div class="turnosClientes__horaTurn-horarios">
+                    <h2>Horarios de Atención</h2>
+                    <ul>
+                        <li>
+                            <span>Lunes a Viernes</span>
+                            <span>9 am - 6 pm</span>
+                        </li>
+                        <li>
+                            <span>Sábados</span>
+                            <span>10 am - 4 pm</span>
+                        </li>
+                        <li>
+                            <span>Domingos</span>
+                            <span>CERRADO</span>
+                        </li>
+                    </ul>
+                </div> 
+                <!-- Fin Horarios -->
+
+                <!-- Agendar Turno FORMULARIO-->
+                <div class="turnosClientes__horaTurn-turnos">
+                    <form id="formulario" action="" name="formulario" method="post">
+                        <fieldset>
+                            <!-- grupo Nombre -->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <!-- <label for="nombre">Nombre</label> -->
+                                <input type="text" id="nombre" name="nombre" placeholder="">
+                                <label for="nombre">Nombre</label>
+                                <p class="formulario__input-error">El Nombre deberá contener de 3 a 30 caracteres y solo
+                                    pueden ser letras</p>
+                            </div>
+                            
+                            <!-- grupo Apellido -->
+                            <div class="formulario__grupo" id="grupo__apellido">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="">
+                                <p class="formulario__input-error">El Apellido deberá contener de 3 a 30 caracteres y
+                                    solo pueden ser letras</p>
+                            </div>
+
+                            <!-- grupo Email -->
+                            <div class="formulario__grupo" id="grupo__email">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="">
+                                <p class="formulario__input-error">El email puede contener números, letras y guión bajo
+                                </p>
+                            </div>
+
+                            <!-- grupo Teléfono -->
+                            <div class="formulario__grupo" id="grupo__telefono">
+                                <label for="telefono">Número Telefónico</label>
+                                <input type="phone" id="telefono" name="telefono" placeholder="">
+                                <p class="formulario__input-error">Deberá ingresar solo números y de 7 a 14 dígitos sin
+                                    espacio</p>
+                            </div>
+
+                            <!-- grupo Imagen -->
+                            <div class="formulario__grupo" id="grupo__foto">
+                                <label for="foto-mascota">Foto de tu Mascota</label>
+                                <input type="" id="foto-mascota" name="foto-mascota" placeholder="">
+                                <p class="formulario__input-error">Debes subir una foto de tu mascota</p>
+                            </div>                            
+
+                            <!-- grupo mascota -->
+                            <div class="formulario__grupo" id="grupo__mascota">
+                                <p class="formulario__grupo-mascota">¿Qué tipo de mascota tenés?</p>
+                                <select class="selector" name="tipo-mascota" id="tipo-mascota">
+                                    <option value="" disabled selected>Seleccioná una...</option>
+                                    <option value="perro">Perro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="ave">Ave</option>                                    
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <p class="formulario__input-error">Deberá seleccionar una opción</p>
+                            </div>
+                            
+                            <!-- grupo Fecha -->
+                            <div class="formulario__grupo" id="grupo__fecha">
+                                <div class="select">
+                                    <input id="fecha" class="fechaHora" type="date" required>
+                                    <p class="formulario__input-error">Solo se podrá obtener turnos de Lunes a Sábados, a partir de mañana</p>
+                                </div>
+                            </div>
+
+                            <!-- grupo Hora -->
+                            <div class="formulario__grupo" id="grupo__hora">
+                                <div class="select">
+                                    <input id="hora" class="fechaHora" type="time">
+                                    <p class="formulario__input-error">Solo se podrá obtener turnos de 9.00hs a 20.00hs de Lunes a Viernes y de 9.00hs a 13.00hs los Sábados, en horas en punto y cada media hora</p>
+                                </div>
+                            </div>
+
+                            <!-- Comentarios adicionales -->
+                            <div class="">
+                                <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Comentarios adicionales..."></textarea>
+                            </div>
+
+                            <div>
+                                <p class="formulario__mensaje-error-texto" id="formulario__mensaje-error">
+                                    <i class="fa-solid fa-triangle-exclamation"></i> 
+                                    <b>Error!!</b> Por favor
+                                    completa el formulario correctamente</p>
+                            </div>
+
+                            <!-- grupo Botón enviar -->
+                            <div class="formulario__grupo formulario__grupo-btn-enviar" id="grupo__btn">
+                                <button type="submit" class="btn">AGENDAR TURNO</button>
+                                <p class="formulario-msj-exito" id="formulario-msj-exito">El formulario ha sido enviado
+                                    exitosamente!!</p>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- Fin Formulario -->
+            </div>
+                <!-- Fin Horarios y Solicitud de turno -->            
         </main>
 
         <!-- Pie -->
@@ -81,5 +204,6 @@
 
     <!-- Archivos Js -->
     <script src="./js/Scroll-botones.js"></script>
+    <script src="./js/Turnos-validacion.js"></script>
 </body>
 </html>

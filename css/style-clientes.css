@@ -338,7 +338,7 @@ a{
 
 .pie__derechos-diseno{
     font-size: 15px;
-    margin-left: 83%;
+    margin-left: 85%;
     margin-top: -45px;
 }
 
@@ -428,7 +428,6 @@ a{
     }
     .boton__watsApp{
         left: 2vh;
-/
     }
 }
 
@@ -489,8 +488,8 @@ a{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
-    
+        background-color: #2c3e50;
+        z-index: 2;
         top: 120px;
         left: -110%;
         text-align: center;
@@ -542,6 +541,9 @@ a{
     .cabecera__menu-subitem a{
         border-radius: 10px;
     }
+    .btn_final_pagina{
+        z-index: 0;
+    }
 }
 
 @media (527px > width){
@@ -578,4 +580,414 @@ a{
 /*Color Main*/
 .colormain{
     background-color: #6ef1e0;
+}
+
+/* Resto del contenido del cuerpo de la página */
+.turnosClientes{
+    font-family: "Poppins" , sans-serif;
+    grid-column: 1/7;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: #5af5aab4;
+    box-sizing: border-box;
+    padding: 40px 0 0;
+    color: #424242;
+}
+
+.turnosClientes__titulos{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.turnosClientes__titulos p{
+    max-width: 60%;
+    line-height: 1.7;
+}
+
+.turnosClientes h3,
+.turnosClientes hr{
+    text-align: center;
+    font-size: 34px;
+    padding: 10px 0 0;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.turnosClientes h3{
+    margin: 0 0 25px;
+
+}
+
+.turnosClientes hr{
+    border-top: 1px solid ;
+    padding: 1px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.turnosClientes__horaTurn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.turnosClientes__horaTurn-horarios{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    line-height: 1.5;
+    width: 55%;
+    margin: 30px 0 40px;
+}
+
+.turnosClientes__horaTurn-horarios h2{
+    text-align: center;
+    padding: 0 0 15px;
+}
+
+.turnosClientes__horaTurn-horarios ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 20%;
+    text-align: center;
+}
+
+.turnosClientes__horaTurn-horarios li{
+    display: flex;
+    column-gap: 10%;
+    justify-content: space-between;
+}
+
+.turnosClientes__horaTurn-turnos{
+    background-color: #00ff887e;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+form{
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.90);
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+
+fieldset, 
+input{
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;    
+}
+
+input,
+.selector{
+    background-color: #e0eee7b2;
+    border: 0;
+    border-bottom: 2px solid #1f1f1f;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    color: #424242;
+    font-size: 16px;
+    outline: 0 none;
+    padding: 10px;
+    height: 55px;
+    resize: none;
+    box-shadow: none;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+    background-image: none;
+    border-radius: 10px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;    
+}
+
+.formulario__grupo{
+    position: relative;
+}
+
+
+.formulario__grupo input,
+textarea,
+.selector{
+    border: 3px solid #b4b4b4;
+}
+
+.formulario__grupo label{
+    font-size: 1.08rem;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color: #818181;
+    background-color: transparent;
+    padding-inline: 0.25rem;
+    border: 0px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms ease-in-out, background-color 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+
+.formulario__grupo:focus-within label,
+.formulario__grupo:not(:has(:placeholder-shown)) label{
+    translate: 0.625rem -1.27rem;
+    font-size: 14px;
+    color: #818181;
+    background-color: #46fca6;
+    position: absolute;
+    z-index: 0;
+}
+
+.formulario__grupo::placeholder{
+    color: transparent;
+}
+
+.formulario__grupo-mascota{
+    text-align: center;
+    font-size: 1.08rem;
+    color: #424242;
+    padding-bottom: 5px;
+}
+
+.selector{
+    -webkit-appearance: none;
+    color: #818181;
+    font-family: "Poppins" , sans-serif;
+    box-sizing: border-box;
+
+    background-image: url(../assets/noun-down-516956.svg);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: right;
+    background-size: 27px;
+    background-position: center right 10px;
+    background-blend-mode:color;
+}
+
+.formulario__campos-error select {
+    border: 3px solid #E91E63;
+}
+
+.formulario__grupo .select{
+/*   margin: 10px 0;
+  padding: 3px 0; */
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.select input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.08rem;
+    text-align: center;
+    color: #818181;
+}
+
+::-webkit-calendar-picker-indicator{
+    border: 1px solid;
+    background-color: transparent;
+    border-radius: 25px;
+}
+
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    font-size: 1.08rem;
+    background-color: #e0eee7b2;
+    color: #424242;
+    border: 3px solid #b4b4b4;
+    border-radius: 10px;
+    padding: 8px;
+    outline: none;
+    resize: none;
+}
+
+.formulario__grupo input:focus {
+    outline: none;
+    border: 3px solid #818181;
+}
+
+.formulario__input-error{
+    font-size: 14px;
+    margin: -20px 0 20px;
+    text-align: center;
+    display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+    max-width: 350px;
+}
+
+.formulario__grupo-btn-enviar{
+    text-align: center;
+}
+
+.formulario__grupo-btn-enviar button{
+    font-size: 18px;
+    font-weight: 700;
+    background: #d2fff4;
+    color: #54f3a6;
+    font-family: "Nunito", sans-serif;
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 70%;
+    margin: 40px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    height: auto;
+    transition: .5s ease-out;/* es lo que hace al salir del hover */
+}
+  
+.turnosClientes__horaTurn-turnos button:hover {
+    box-shadow: inset 0px 0px 3px 3px rgba(213, 248, 235, 0.801);
+    color: #d2fff4;
+    background: #b4b4b4;
+    border: 1px solid #e8e8e8;
+    transition: .3s ease-out; /* al producirse el hover */
+}
+
+.formulario-msj-exito{
+    text-align: center;
+    color: #009394;
+    margin: 0;
+    display: none;    
+}
+
+/* esta clase es para aplicar con js */
+.formulario-msj-exito-activo {
+    display: block;
+}
+
+/* Estilo para Error en inputs */
+
+/* Estas son las clases que están puesta por defecto, antes de validar. Pero no se aplica hasta que no se ingresa a al menos un campo y js valide. Una vez que se valida el campo respectivo, si lo ingresado por el usurio no coincide con las expreciones regulares js agrega estas clase*/
+.formulario__campos-error p {
+    display: block;
+    color: #E91E63;
+    padding-bottom: 10px;
+}
+  
+.formulario__campos-error input {
+    border: 3px solid #E91E63;
+}
+  
+.formulario__campos-error-select {
+    border: 3px solid #E91E63;
+
+}
+  
+.fa-triangle-exclamation {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+  
+.formulario__mensaje-error-texto {
+    text-align: center;
+    color: #E91E63;
+    margin: 0;
+    display: none;
+    font-size: 1.01rem;
+    margin: 8px 0 0;
+    padding: 0 5px;
+}
+  
+.formulario__mensaje-error-texto-activo {
+    display: block;
+}
+
+
+
+/* Agragados al estilo general */
+.cabecera{
+    z-index: 1;
+}
+
+.pie__redes-icono{
+    font-size: calc(1.4rem + 0.90vw);
+}
+
+/* ------------------
+Responsive Incorporaciones
+-------------------- */
+
+
+@media(769px > width){
+    .turnosClientes__horaTurn-horarios ul{
+        padding: 0;
+    }
+
+    .pie__derechos-diseno {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (390px > width){
+    .turnosClientes h3{
+        font-size:  calc(1rem + 0.90vw);
+    }
+    .turnosClientes__horaTurn-horarios span{
+        font-size: calc(0.3rem + 3vw);
+    }
+    .turnosClientes__horaTurn .btn{
+        margin: 30px 0;
+        padding: 10px;
+        font-size: calc(0.3rem + 3vw);
+        width: 90%;
+    }
+}
+
+@media(368px > width){
+    .turnosClientes__horaTurn-turnos{
+        width: 100%;
+    }
+    .pie__redes-icono{
+        font-size: calc(1.1rem + 0.90vw);
+    }
+    label, .select input, textarea{
+        font-size: 1rem;
+    }
+    .selector{
+        background-size: 15px;
+    }
+}
+
+@media(250px > width){
+    .turnosClientes__horaTurn-horarios{
+        padding: 0;
+    }
+    .formulario__grupo-btn-enviar button{
+        font-size: calc(1rem + 0.80vw);
+    }
+    .formulario__grupo label, .select input, textarea{
+        font-size: calc(0.4rem + 3vw);
+    }
+    .pie__redes-icono{
+        font-size: calc(0.70rem + 0.90vw);
+    }
 }
