@@ -58,7 +58,12 @@ const validarHora = (hora) => {
     // separamos el string hora para obtener horas y minutos.
     const [horas, minutos] = hora.split(':').map(Number);
     // Comprobamos si los minutos son 0 o 30
-    return minutos === 0 || minutos === 30;
+    const minutosValidos = minutos === 0 || minutos === 30;
+
+    // Comprobamos si las horas están dentro del rango permitido (9:00 a.m. - 7:30 p.m.)
+    const horasValidas = (horas >= 9 && horas <= 19) && !(horas === 19 && minutos > 30);
+    
+    return minutosValidos && horasValidas;
 };
 
 
