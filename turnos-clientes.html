@@ -108,10 +108,19 @@
 
                             <!-- grupo Imagen -->
                             <div class="formulario__grupo" id="grupo__foto">
-                                <label for="foto-mascota">Foto de tu Mascota</label>
-                                <input type="" id="foto-mascota" name="foto-mascota" placeholder="">
+                                <input type="file" id="foto-mascota" name="foto-mascota">
+                                <label for="foto-mascota">
+                                    Subí aquí una foto de tu Mascota
+                                    <i class="fa-regular fa-file-image"></i>
+                    
+                                </label>
+
+                                <div id="ver_imagen">
+                                    <img id="imagen_subida" alt="Imagen Subida" />
+                                </div>
+
                                 <p class="formulario__input-error">Debes subir una foto de tu mascota</p>
-                            </div>                            
+                            </div>
 
                             <!-- grupo mascota -->
                             <div class="formulario__grupo" id="grupo__mascota">
@@ -204,6 +213,7 @@
 
     <!-- Archivos Js -->
     <script src="./js/Scroll-botones.js"></script>
+    <script src="./js/Mostrar-imagen.js"></script>
     <script src="./js/Turnos-validacion.js"></script>
 </body>
 </html>

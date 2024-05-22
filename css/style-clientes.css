@@ -805,7 +805,8 @@ textarea,
     border-radius: 25px;
 }
 
-textarea{
+textarea,
+#grupo__foto label{
     width: 100%;
     box-sizing: border-box;
     font-family: "Poppins" , sans-serif;
@@ -817,6 +818,57 @@ textarea{
     padding: 8px;
     outline: none;
     resize: none;
+}
+
+input[type="file"]{
+    opacity: 0;
+    color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    /* top: 25%; */
+    height: 100px;
+    position: absolute;
+    top: -12px;
+}
+
+#grupo__foto{
+    margin: 45px 0;
+    margin-bottom: 20px;
+}
+
+#grupo__foto label{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    height: auto;
+    padding: 20px 0;
+    color: #818181;
+    cursor: pointer;
+    left: -9px;
+}
+
+#grupo__foto label i{
+    font-size: 2rem;
+}
+
+#ver_imagen img{
+    display: none;
+}
+
+#ver_imagen{
+    place-content: center;
+    align-items: center;
+}
+
+.recuadroImagenSubida{
+    border-radius: 25px;
+    height: 50%;
 }
 
 .formulario__grupo input:focus {
