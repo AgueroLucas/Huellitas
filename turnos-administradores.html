@@ -41,9 +41,85 @@
         
         <main>
             <!-- colocar el contenido que sea necesario, los sections son a modo de ejemplo -->
-            <section></section>
-            <section></section>
-            <section></section>
+            <div class="main-container">
+                <input type="checkbox" id="flip"/>
+                <div class="solapa">
+                    <div class="frente">
+                        <img src="./img/veterinaria.jpg" alt="profesional-veterinaria"/>
+                        <div class="text">
+                            <span class="text-1">En cada comienzo nos<br/>
+                                espera algo por descubrir</span>
+                            <span class="text-2">Comencemos!</span>
+                        </div>
+                    </div>
+                    
+                    <div class="detras">
+                        <img class="imgDetras" src="img/veterinario1.jpg" alt="profesional-veterinario"/>
+                        <div class="text">
+                            <span class="text-1">Cada nueva experiencia<br/>
+                                es una nueva aventura.</span>
+                            <span class="text-2">Conectémonos!</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="formularios">
+                    <div class="formulario-contenido">
+                        <div class="formulario-ingreso">
+                            <div class="titulo">Ingresar</div>
+                            <form action="#">
+                                <div class="inputs-contenedor">
+                                    <div class="input-grupo">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="text" placeholder="Ingresá tu email" required/>
+                                    </div>
+                                    <div class="input-grupo">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input type="password" placeholder="Ingresá tu contraseña" required/>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">¿Olvidaste tu contraseña?</a>
+                                    </div>
+                                    <div class="btn input-grupo">
+                                        <input type="submit" value="Enviar"/>
+                                    </div>
+                                    <div class="text registro-text">
+                                        ¿No tenés una cuenta?
+                                        <label for="flip">Registrate</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <div class="formulario-registro">
+                            <div class="titulo">Registrarse</div>
+                            <form action="#">
+                                <div class="inputs-contenedor">
+                                    <div class="input-grupo">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" placeholder="Ingresá tu nombre" required/>
+                                    </div>
+                                    <div class="input-grupo">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="text" placeholder="Ingresá tu email" required/>
+                                    </div>
+                                    <div class="input-grupo">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input type="password" placeholder="Ingresá tu contraseña" required/>
+                                    </div>
+                                    <div class="btn input-grupo">
+                                        <input type="submit" value="Enviar"/>
+                                    </div>
+                                    <div class="text registro-text">
+                                        ¿Ya tenés una cuenta?
+                                        <label for="flip">Ingresá</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <!-- Pie -->
