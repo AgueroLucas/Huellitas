@@ -587,14 +587,13 @@ Modificación, luego se le da el estilo definitivo más abajo
     background-color: #6ef1e0;
 }
 
+.cabecera{
+    z-index: 1;
+}
+
 main{
     grid-column: 1/7;
     grid-row: 2/3;
-
-    /* display: grid; */
-    /* Ajustar de acuerdo al contenido que se quiera incorporar
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(19, auto); */
 
     box-sizing: border-box;
     font-family: "Poppins" , sans-serif;
@@ -715,7 +714,7 @@ main{
     left: 0;
     bottom: 0;
     height: 3px;
-    width: 21px;
+    width: 19px;
     background: #6ef1e0;
 }
 .formularios .formulario-registro .titulo:before{
