@@ -592,7 +592,7 @@ a{
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    background-color: #5af5aab4;
+    background-color: #6ef1e0;
     box-sizing: border-box;
     padding: 40px 0 0;
     color: #424242;
@@ -771,7 +771,7 @@ textarea,
     background-repeat: no-repeat;
     background-size: 45px;
     background-position: right;
-    background-size: 27px;
+    background-size: 19px;
     background-position: center right 10px;
     background-blend-mode:color;
 }
