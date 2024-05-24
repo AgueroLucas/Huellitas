@@ -979,9 +979,9 @@ input[type="file"]{
     z-index: 1;
 }
 
-.pie__redes-icono{
+/* .pie__redes-icono{
     font-size: calc(1.4rem + 0.90vw);
-}
+} */
 
 /* ------------------
 Responsive Incorporaciones
