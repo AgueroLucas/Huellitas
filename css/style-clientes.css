@@ -999,6 +999,12 @@ Responsive Incorporaciones
     }
 }
 
+@media(476px > width){
+    .pie__redes-iconos{
+        font-size: 2rem;
+    }
+}
+
 @media (390px > width){
     .turnosClientes h3{
         font-size:  calc(1rem + 0.90vw);
@@ -1018,14 +1024,20 @@ Responsive Incorporaciones
     .turnosClientes__horaTurn-turnos{
         width: 100%;
     }
-    .pie__redes-icono{
+    /* .pie__redes-icono{
         font-size: calc(1.1rem + 0.90vw);
-    }
+    } */
     label, .select input, textarea{
         font-size: 1rem;
     }
     .selector{
         background-size: 15px;
+    }
+}
+
+@media(314px > width){
+    .pie__redes-iconos{
+        font-size: 1.5rem;
     }
 }
 
@@ -1039,7 +1051,10 @@ Responsive Incorporaciones
     .formulario__grupo label, .select input, textarea{
         font-size: calc(0.4rem + 3vw);
     }
-    .pie__redes-icono{
+/*     .pie__redes-icono{
         font-size: calc(0.70rem + 0.90vw);
+    } */
+    .pie__redes-iconos{
+        font-size: 1rem;
     }
 }

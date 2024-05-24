@@ -734,3 +734,31 @@ h2 {
         width: calc(100% - 40px); /* Ajusta el ancho para que cada tarjeta ocupe toda la fila */
     }
 }
+
+/* ------------
+Ajuste al Responsive
+--------------- */
+@media(769px > width){
+    .pie__derechos-diseno {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media(476px > width){
+    .pie__redes-iconos{
+        font-size: 2rem;
+    }
+}
+
+@media(314px > width){
+    .pie__redes-iconos{
+        font-size: 1.5rem;
+    }
+}
+
+@media(250px > width){
+    .pie__redes-iconos{
+        font-size: 1rem;
+    }
+}

@@ -800,6 +800,13 @@ main{
 /* --------------------------------------------------------------------------------
 Ajustes al responsive
 ----------------------------------------------------------------------------------*/
+@media(769px > width){
+    .pie__derechos-diseno {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 730px) {
     .main-container .solapa{
       display: none;
@@ -816,5 +823,23 @@ Ajustes al responsive
     }
     .main-container #flip:checked ~ .formularios .formulario-ingreso{
       display: none;
+    }
+}
+
+@media(476px > width){
+    .pie__redes-iconos{
+        font-size: 2rem;
+    }
+}
+
+@media(314px > width){
+    .pie__redes-iconos{
+        font-size: 1.5rem;
+    }
+}
+
+@media(250px > width){
+    .pie__redes-iconos{
+        font-size: 1rem;
     }
 }

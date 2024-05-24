@@ -912,3 +912,36 @@ main{
 -------------------------------------------------------------------*/
 
 
+/* ------------
+Ajuste al Responsive
+--------------- */
+@media(769px > width){
+    .pie__derechos-diseno {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .ubicacion {
+        padding: 35px 35px 0;
+    }
+}
+
+@media(476px > width){
+    .pie__redes-iconos{
+        font-size: 2rem;
+    }
+}
+
+@media(314px > width){
+    .pie__redes-iconos{
+        font-size: 1.5rem;
+    }
+}
+
+@media(250px > width){
+    .bienvenida__slogan-bienestar{
+        font-size: 2rem;
+    }
+    .pie__redes-iconos{
+        font-size: 1rem;
+    }
+}
