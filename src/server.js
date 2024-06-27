@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Basic route for the root of the server
 app.get("/", (req, res) => {
-    res.send("Welcome to the Tienda API!");
+    res.send("!Binvenidos a Huellitas API!");
 });
 
 
