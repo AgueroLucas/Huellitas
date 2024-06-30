@@ -41,3 +41,36 @@ Para crear un turno
     "id_mascota": 1,
     "id_titular": 1
 }
+
+
+Paso a paso para crear un registro
+1:http://localhost:3000/auth/register , colocar esa url en POST en el postman
+ir a headers y en KEY ingresar Content-Type y en value ingresar application/jason.
+luego volvemos a Body y ingresar la siguiente tabla
+{
+    "username" : "lucas" ,
+    "password": "1234"
+
+}
+aqui apretamos send y nos dara el siguiente codigo 
+
+{
+    "auth": true,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5NzA5NDY5LCJleHAiOjE3MTk3MTMwNjl9.tAk9zcfWWCQO2zKyHDVNHXyrM92M4BdMLbJfoJEjwjg"
+}
+
+2:para el login seguir en el POST y colocar http://localhost:3000/auth/login
+le damos a send y nos devvuelve 
+{
+    "auth": true,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE5NzA5NjgyLCJleHAiOjE3MTk3MTMyODJ9.wmriLh1Hzb9dTZTexZuW1dG_HK1ubux4b3zewJZjbs0"
+}
+el token va a ser diferente al de register
+
+
+el ultimo paso a realizar para probar el token para validar una ruta protegida:
+
+http://localhost:3000/auth/protected esta url la colocamos en GET de Postman 
+luego nos vamos a Headers nuevamente y colocar 
+en KEY Authorization y en VALUE bearer, hacer un espacio y colocar o que esta en token.
+le damos a Send y nos tiene que dar una respuesta : Hello user 1
